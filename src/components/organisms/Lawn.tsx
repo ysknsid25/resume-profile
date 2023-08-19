@@ -12,7 +12,11 @@ interface LawnProps {
 export const Lawn = ({ contributesList }: LawnProps): JSX.Element => {
     return (
         <div className="grid grid-cols-1 gap-2">
-            <div className="border border-1 rounded-md border-gray-200 px-8 py-4">
+            <div className="flex justify-start items-start border border-1 rounded-md border-gray-200 px-8 py-4 gap-2">
+                <div className="grid grid-cols-1 gap-1">
+                    <div className="mb-10 text-gray-400 text-xs">Mon</div>
+                    <div className="text-gray-400 text-xs">Fri</div>
+                </div>
                 <div className="grid grid-cols-1 gap-1">
                     {contributesList.map((contributes, index) => {
                         const id = `grassToolTip${index}`
