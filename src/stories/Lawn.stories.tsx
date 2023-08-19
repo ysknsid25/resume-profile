@@ -1,24 +1,23 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { SpeechBubbleToolTip } from "../components/atoms/SpeechBubbleToolTip";
+import { Lawn } from "../components/organisms/Lawn";
 
 const meta = {
-    title: 'Atoms/SpeechBubbleToolTip',
-    component: SpeechBubbleToolTip,
+    title: 'Organisms/Lawn',
+    component: Lawn,
     parameters: {
         layout: 'centered',
     },
     tags: ['autodocs'],
     argTypes: {
     },
-} satisfies Meta<typeof SpeechBubbleToolTip>;
+} satisfies Meta<typeof Lawn>;
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
     args: {
-        id: "tooltip-default",
-        content: "This is a tooltip",
+        contributesList: [6, 0, 15, 20, 2, 6, 2],
     },
 };

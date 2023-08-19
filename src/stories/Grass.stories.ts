@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Grass } from "../components/atoms/Grass";
 
 const meta = {
-    title: 'Example/Grass',
+    title: 'Atoms/Grass',
     component: Grass,
     parameters: {
         layout: 'centered',
